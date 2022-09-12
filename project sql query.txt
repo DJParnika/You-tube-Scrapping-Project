@@ -1,0 +1,14 @@
+show databases;
+create database youtube;
+use youtube;
+show tables;
+
+create table youtube.yt_videoList (video_id varchar(20) NOT NULL, video_title varchar(30), video_link varchar(50), video_views varchar(20), video_posted_on varchar(20));
+DESC youtube.yt_videoList;
+
+
+create table youtube.yt_commentList (video_id varchar(20) NOT NULL, video_url varchar(50), video_thumbnail varchar(50), video_likes varchar(15), no_of_comments int, video_comment varchar(100), video_commenter varchar(20));
+DESC youtube.yt_commentList;
+
+select * from youtube.youtube.yt_videoList;
+select * from youtube.yt_commentList;
